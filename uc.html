@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <title>Digital Unit Converter</title>
+    <script src="https://kit.fontawesome.com/3e6491bf19.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="uc.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="converter-title">Length Converter</h1><br>
+        <input type="text" placeholder="Enter Numbers only" id="input" oninput="checkCondition()"
+            onkeyup="myResult()">
+        <p id="warning"></p><br>
+
+        <input type="number" placeholder="Result" id="result" onkeyup="myResult()" readonly></p><br><br>
+        <div class="unit_container">
+            
+            <div class="left">
+                <p>From</p>
+                <div class="select_container">
+                <select id="inputType">
+                    <option value="meter">Meter</option>
+                    <option value="kilometer">Kilometer</option>
+                    <option value="centimeter">Centimeter</option>
+                    <option value="inch">Inch</option>
+                    <option value="yard">Yard</option>
+                    <option value="feet">Feet</option>
+                </select>
+            </div>
+            </div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
+
+            <div class="middle">
+                <i class="fas fa-cog fa-spin" style="font-size:24px"></i>
+            </div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
+
+
+            
+            <div class="right">
+                <p>To</p>
+                <div class="select_container to">
+                <select id="resultType">
+                    <option value="meter">Meter</option>
+                    <option value="kilometer">Kilometer</option>
+                    <option value="centimeter">Centimeter</option>
+                    <option value="inch">Inch</option>
+                    <option value="yard">Yard</option>
+                    <option value="feet">Feet</option>
+                </select>
+                </div>
+                </div>
+        </div>
+    </div>
+
+    <script src="uc.js"></script>
+</body>
+
+</html>
